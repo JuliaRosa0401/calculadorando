@@ -68,7 +68,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 80px; /* Adiciona espaçamento para o cabeçalho fixo */
-    background-image: url('wallpaper1.png');
+    background-image: url('wallpaper1.jpg');
     background-size: cover;
     background-position: center;
 }
