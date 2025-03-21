@@ -9,7 +9,7 @@ body {
     background-color: rgb(243, 222, 222);
     color: #fff;
     font-family: Arial, sans-serif;
-    background-image: url('wallpaper3.jpg');
+    background-image: url('wallpaper1.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -69,6 +69,7 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 80px; /* Adiciona espaçamento para o cabeçalho fixo */
+
 }
 
 .box {

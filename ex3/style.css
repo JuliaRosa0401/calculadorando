@@ -11,14 +11,11 @@ body {
     background-color: rgb(243, 237, 222);
     color: #fff;
     font-family: Arial, sans-serif;
-    background-image: url('wallpaper3.jpg');
-    background-size: cover;
-    background-position: center;
     min-height: 100vh;
 }
 
 .header, .navbar {
-    background-color: #b68a42;
+    background-color: #e3b247;
     color: white;
     width: 100%;
     position: fixed;
@@ -71,6 +68,9 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 80px; /* Adiciona espaçamento para o cabeçalho fixo */
+    background-image: url('wallpaper1.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .box {
