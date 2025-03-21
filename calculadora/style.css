@@ -1,24 +1,79 @@
 body {
-    background-color: rgb(243, 222, 222);
-    color: #fff;
     font: 1em Arial;
     text-align: center;
     margin: 0;
     padding: 0;
     height: 100vh; /* Garante que o fundo cubra toda a tela */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Alinha os itens de cima para baixo */
+    background-color: rgb(243, 222, 222);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-image: url('wallpaper3.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
-main {
-    background-image: url('wallpaper3.jpg');
-    background-size: cover;  
-    background-position: center; 
+.header, .navbar {
+    background-color: #933f3f;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    box-sizing: border-box;
 }
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .nav-links {
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #bbb;
+}
+
+/* Ajuste para garantir que o conteúdo da main ocupe o espaço restante */
+main {
+    width: 100%;
+    flex-grow: 1; /* Isso faz com que o conteúdo principal ocupe o espaço restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* Adiciona espaçamento para o cabeçalho fixo */
+}
+
 .box {
     width: 40%;
-    min-height: 80%; /* Garante que a caixa tenha um tamanho mínimo */
+    min-height: 80%;
     margin: 50px auto;
     border: 2px solid black;
     background-color: #a56561;
@@ -26,8 +81,8 @@ main {
     box-shadow: 5px 5px 5px #000;
     text-align: center;
     padding: 20px;
-    overflow: hidden; /* Evita que elementos ultrapassem os limites da caixa */
-    box-sizing: border-box; /* Garante que o padding e border sejam considerados no cálculo do tamanho */
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 input {
@@ -46,7 +101,6 @@ input {
     text-align: center;
 }
 
-
 .result-box {
     width: 50%;
     margin: 10px auto;
@@ -62,8 +116,8 @@ input {
 
 .action-container {
     display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -72,19 +126,35 @@ button {
     height: 50px;
     border-radius: 10px;
     margin: 10px 4px;
-    background-color: #542323; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
+    background-color: #542323;
+    color: #fff;
     border: none;
     cursor: pointer;
     font-size: 1.5em;
-    transition: background-color 0.3s ease; /* Transição suave para hover */
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #8c5a5a; /* Cor de fundo ao passar o mouse */
+    background-color: #8c5a5a;
 }
 
-/* Responsividade: Ajustes para telas menores */
+/* Novo estilo para o footer */
+footer {
+    background-color: #a35555da;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    /* Removemos a posição absoluta e usamos flexbox para garantir que o footer fique no final da página */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .box {
         width: 80%;
