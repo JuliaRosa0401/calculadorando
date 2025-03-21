@@ -14,11 +14,11 @@ O **Calculadorando** é um projeto desenvolvido para praticar e aplicar conhecim
 
 ### 3. **Aumento Salarial**
    - **Descrição**: Simula o impacto de diferentes percentuais de aumento no salário de um trabalhador.
-   - **Como usar**: Insira o salário atual e o percentual de aumento desejado. O cálculo será realizado automaticamente para mostrar o novo salário após o aumento.
+   - **Como usar**: Insira o salário atual, apartir dele será definido o aumento (baseado na pré-definição programada). O cálculo será realizado automaticamente para mostrar o novo salário após o aumento.
 
 ### 4. **Transporte de Colaboradores**
    - **Descrição**: Estima os custos relacionados ao transporte de colaboradores, levando em consideração o valor do transporte por funcionário e o número de colaboradores.
-   - **Como usar**: Insira o valor do transporte por colaborador e o número de colaboradores para calcular o custo total do transporte.
+   - **Como usar**: Insira o valor dos dias que o transporte deve acontecer  e o número de colaboradores para calcular o custo total do transporte.
 
 ---
 
