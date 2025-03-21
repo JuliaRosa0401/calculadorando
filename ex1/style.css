@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(243, 222, 222);
+    color: #fff;
+    font: 1em Arial;
+    text-align: center;
+    background-image: url('wallpaper3.jpg');
+    background-size:cover;  
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o fundo cubra toda a tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 70%;
+    height: 80%;
+    margin: 50px auto ;
+    border: 2px black solid;
+    background-color: #5e869c;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#res {
+    font-size: larger;
+    color: red;
+    text-align: center;
+}
+
+button {
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 4px;
+}

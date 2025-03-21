@@ -1,0 +1,211 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do body */
+body {
+    background-color: rgb(243, 222, 222);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('wallpaper3.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 70%; 
+}
+
+/* Estilos da navbar */
+.header, .navbar {
+    background-color: #933f3f;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .nav-links {
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Remover o sublinhado e a cor padrão azul dos links */
+.navbar .nav-links a {
+    text-decoration: none; /* Remover sublinhado */
+    color: white; /* Definir cor para branco */
+    transition: color 0.3s;
+}
+
+/* Alterar a cor dos links ao passar o mouse */
+.navbar .nav-links a:hover {
+    color: #bbb;
+}
+
+/* Ajuste para o conteúdo abaixo da navbar */
+body {
+    padding-top: 60px; /* Ajuste para que o conteúdo não fique escondido atrás da navbar */
+}
+
+/* Estilo para a caixa principal */
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 80%;
+    margin: 2px auto;
+    background-color: #3e0404;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Caixa à esquerda - com 4 caixas dentro */
+.left-box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.left-box .link {
+    background-color: #b18787;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    color:#f8eaea
+}
+
+.left-box .link:hover {
+    background-color: #8c5a5a;
+    transform: translateY(-3px);
+}
+
+/* Caixa à direita - com 2 caixas */
+.right-box {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-box .box {
+    background-color: #b18787;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do footer */
+footer {
+    background-color: #a35555da;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para o box de resultado */
+.result-box {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #542323; 
+    border: 1px solid #583333;    
+    border-radius: 15px;      
+    box-sizing: border-box;  
+    font-size: 0.9em;          
+    color: #ffe3e3;               
+    text-align: center;          
+}
+
+/* Estilo para o datetime */
+#datetime {
+    flex: 1; 
+    text-align: right; 
+    padding-right: 10px;
+    font-size: 1.2em; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-box, .right-box {
+        width: 100%;
+    }
+
+    .left-box {
+        margin-bottom: 20px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
