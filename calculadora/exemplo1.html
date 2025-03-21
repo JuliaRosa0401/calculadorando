@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <h1>✭ Calculadorando ✭</h1>
-        <label for="n1">Número 1</label>
-        <input type="number" name="n1" id="n1">
-        <br>
-        <label for="n2">Número 2</label>
-        <input type="number" name="n2" id="n2">
-        <br> 
-        <button onclick="somar()">+ </button>
-        <button onclick="subtrair()">-</button>
-        <button onclick="multiplicar()">x </button>
-        <button onclick="dividir()"> ÷ </button>
-        <button onclick="potencia()"> ^ </button>
-        <button onclick="raizquadrada()"> √ </button>
-        <br>
-        <label for="res">Resultado:</label>
-            <p id="res">Aqui irá aparecer o resultado...</p>
-        <br>
-        <div class="action-container">
-            <button onclick="limpar()">Limpar</button>
+    <main>
+        <div class="box">
+            <h1>✭ Calculadorando ✭</h1>
+            <label for="n1">Número 1</label>
+            <input type="number" name="n1" id="n1">
+            <br>
+            <label for="n2">Número 2</label>
+            <input type="number" name="n2" id="n2">
+            <br> 
+            <button onclick="somar()">+ </button>
+            <button onclick="subtrair()">-</button>
+            <button onclick="multiplicar()">x </button>
+            <button onclick="dividir()"> ÷ </button>
+            <button onclick="potencia()"> ^ </button>
+            <button onclick="raizquadrada()"> √ </button>
+            <br>
+            <label for="res">Resultado:</label>
+                <p id="res">Aqui irá aparecer o resultado...</p>
+            <br>
+            <div class="action-container">
+                <button onclick="limpar()">Limpar</button>
+            </div>
         </div>
-    </div>
+    </main>
 
 
     <script src="codigo.js"></script>

@@ -3,9 +3,6 @@ body {
     color: #fff;
     font: 1em Arial;
     text-align: center;
-    background-image: url('wallpaper3.jpg');
-    background-size: cover;  
-    background-position: center; 
     margin: 0;
     padding: 0;
     height: 100vh; /* Garante que o fundo cubra toda a tela */
@@ -14,6 +11,11 @@ body {
     align-items: center;
 }
 
+main {
+    background-image: url('wallpaper3.jpg');
+    background-size: cover;  
+    background-position: center; 
+}
 .box {
     width: 40%;
     min-height: 80%; /* Garante que a caixa tenha um tamanho mínimo */

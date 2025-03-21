@@ -80,12 +80,12 @@ main {
     color: #bbb;
 }
 
-/* Ajuste para o conteúdo abaixo da navbar */
+
 body {
-    padding-top: 60px; /* Ajuste para que o conteúdo não fique escondido atrás da navbar */
+    padding-top: 60px; 
 }
 
-/* Estilo para a caixa principal */
+
 .main-box {
     display: flex;
     justify-content: space-between;
